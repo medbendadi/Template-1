@@ -212,8 +212,10 @@ hr {
 /* End Features */
 /* Start Services */
 .containe {
-  background-color: #926fe3;
+  /* background-color: #926fe3; */
   margin: 0 auto;
+  background-image: url(/imges/Care.PNG);
+  background-size: cover;
 }
 .col {
   display: grid;
@@ -247,6 +249,7 @@ hr {
   margin-top: 6px;
 }
 .service {
+  background-color: #efefef80;
   margin: 10px;
   overflow: hidden;
   padding: 35px 15px;
@@ -254,6 +257,7 @@ hr {
   text-align: center;
   transition: background-color 0.3s ease-in, transform 0.3s ease-in;
   width: 200px;
+  cursor: pointer;
 }
 .service:hover {
   background-color: #796c97;
@@ -275,7 +279,7 @@ hr {
 }
 .service > i {
   display: block;
-  color: #001aff;
+  color: #652f91;
   font-size: 4rem;
   margin-bottom: 0.9rem;
   transition: color 0.3s ease-out;

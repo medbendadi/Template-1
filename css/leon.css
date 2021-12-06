@@ -19,32 +19,6 @@ body {
   padding: 0 15px;
 }
 
-/* Small Screens */
-@media (max-width: 767px) {
-  .containe h1 {
-    font-size: 20px;
-  }
-  .containe .para {
-    font-size: 15px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-/* Medium Screens */
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-/* Large screens */
-@media (min-width = 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 /* End Global Rules */
 /* Start Header */
 .header {
@@ -329,3 +303,47 @@ hr {
   color: #ddd6f4;
 }
 /* End Services */
+/* Small Screens */
+@media (max-width: 767px) {
+  .landing .intro-text h1 {
+    font-size: 13vw;
+  }
+  .containe .para {
+    font-size: 15px;
+  }
+  .features .container {
+    margin: 0 32px;
+  }
+  .containe h1 {
+    font-size: 70px;
+  }
+  .service > i {
+    font-size: 3.2rem;
+  }
+  .col {
+    gap: 0;
+  }
+  .landing .intro-text {
+    top: 48%;
+  }
+  .service {
+    padding: 13px 15px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large screens */
+@media (min-width = 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

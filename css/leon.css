@@ -214,7 +214,7 @@ hr {
 .containe {
   /* background-color: #926fe3; */
   margin: 0 auto;
-  background-image: url(/imges/Care.PNG);
+  background-image: url(imges/Care.PNG);
   background-size: cover;
 }
 .col {

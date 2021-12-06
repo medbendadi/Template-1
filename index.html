@@ -1,132 +1,353 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leon Template</title>
-    <!-- Main Template css File -->
-    <link rel="stylesheet" href="css/leon.css">
-    <!-- Render all elements Normally -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Awesome Fonts Library  -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <!-- Used Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Start Header -->
-    <div class="header">
-        <div class="container">
-            <img class = "logo" src="imges/logo.png" alt="">
-            <div class="links">
-                <span class="icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End Header -->
-    <!-- Start Landing Section  -->
-    <div class="landing">
-        <div class="intro-text">
-            <h1>Welcome Home</h1>
-            <p>Feel Free while Browsing</p>
-        </div>
-    
-    </div>
-    <hr>
-    <!-- End Landing Section  -->
-    <!-- Start Features -->
-    <div class="features">
-        <div class="container">
-            <div class="feat">
-                <i class="fas fa-hat-wizard"></i>
-                <h3>Be Creative</h3>
-                <p>It stands to reason that a willingness to explore and try new things would be correlated with creativity.</p>
-            </div>
-            <div class="feat">
-                <i class="fas fa-balance-scale"></i>
-                <h3>Balance</h3>
-                <p>Maintaining a balanced life is becoming increasingly more important for your personal health.</p>
-            </div>
-            <div class="feat">
-                <i class="fas fa-binoculars"></i>
-                <h3>Explore</h3>
-                <p>Humanity's interest in the heavens has been universal and enduring. Humans are driven to explore the unknown.</p>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <!-- End Features -->
-    <!-- Start Services -->
-    <div class="containe">
-        <h1>Services</h1>
-        <p class="para">Don't Be Busy, be productive</p>
-        <div class="col">
-            <div class="services">
-                <div class="service">
-                    <i class="fab fa-sketch"></i>
-                    <h4 class="title">Web Design</h4>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, eveniet odit. Aliquid odio laborum tempora.
-                    </p>
-                </div>
-                
+/* Start Variables */
 
-                </p>
-            </div>
-            <div class="services">
-                <div class="service">
-                    <i class="fas fa-code"></i>
-                    <h4 class="title">Web Development</h4>
-                    <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus veniam soluta cum quod ut, ipsam maiores.
-                    </p>
-                </div>
-                
-            </div>
-            <div class="services">
-                <div class="service">
-                    <i class="fas fa-user-tie"></i>
-                    <h4 class="title">Seo</h4>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nulla adipisci exercitationem, ad asperiores.
-                    </p>
-                </div>
+/* End Variables */
 
-            </div>
-            <div class="services">
-                <div class="service"><i class="fas fa-drafting-compass"></i>
-                    <h4 class="title">UI/UX</h4>
-                    <p class="description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro vel odio animi ea nisi at recusandae alias.
-                    </p>
-                </div>
-            </div>
-        </div>
-            
-        </div>
-    </div>
-    <!-- End Services -->
-</body>
-</html>
+/*  Start Global Rules*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.parent {
+  background-color: #eee;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* End Global Rules */
+/* Start Header */
+.header {
+  padding: 20px;
+  background-color: #ddd6f4;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 60px;
+}
+.header .links {
+  position: relative;
+  cursor: pointer;
+}
+.header .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.header .links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .links .icon span {
+  background-color: #333;
+  margin-bottom: 5px;
+}
+.header .links .icon span:first-child {
+  height: 3px;
+  width: 100%;
+}
+.header .links .icon span:nth-child(2) {
+  height: 3px;
+  width: 50%;
+  transition: 0.5s;
+}
+.header .links .icon span:nth-child(3) {
+  height: 3px;
+  width: 100%;
+}
+.header .links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  background-color: #796c97;
+  display: none;
+  transition: 0.3s;
+  z-index: 1;
+}
+.header .links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.header .links ul li a {
+  display: block;
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.header .links ul li a:hover {
+  padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #000;
+}
+.header .links:hover ul {
+  display: block;
+}
+
+/* Start Landing Section */
+
+.landing {
+  background-image: url(../imges/171-1715544_3-monitor-wallpaper-hd-retro.jpg);
+  background-size: cover;
+  height: calc(100vh - 64px);
+}
+.landing .intro-text {
+  position: absolute;
+  left: 11%;
+  top: 39%;
+  text-align: center;
+  max-width: 100%;
+}
+.landing .intro-text h1 {
+  margin: 0;
+  color: #000;
+  font-size: 69px;
+  font-family: "Lobster", cursive;
+  font-weight: 500;
+}
+.landing .intro-text p {
+  color: #edebf0;
+  font-size: 20px;
+}
+
+/* End Landing Section */
+
+/* Start Features */
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #796c97;
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+  gap: 20px;
+  transition: 0.4s;
+}
+.features .feat:first-child:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.features .feat:nth-child(2):hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.features .feat:nth-child(3):hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.features .feat {
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #ddd6f4;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  width: 282px;
+}
+.features .feat i {
+  color: #796c97;
+  font-size: 40px;
+}
+.features .feat h3 {
+  font-family: "Cairo", sans-serif;
+  font-weight: 800;
+  margin: 20px 0 15px;
+}
+.features .feat p {
+  line-height: 1.8;
+  font-size: 17px;
+  font-family: "Josefin Sans", sans-serif;
+}
+hr {
+  height: 4px;
+  margin: 0;
+}
+/* End Features */
+/* Start Services */
+.containe {
+  /* background-color: #926fe3; */
+  margin: 0 auto;
+  background-image: url(/imges/Care.PNG);
+  background-size: cover;
+}
+.col {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+  gap: 20px;
+}
+.container > h1,
+.container > p {
+  text-align: center;
+}
+.containe h1 {
+  color: #cfcadf;
+  font-size: 100px;
+  padding-top: 21px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+.containe .para {
+  margin: -7px 0 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6px;
+}
+.service {
+  background-color: #efefef80;
+  margin: 10px;
+  overflow: hidden;
+  padding: 35px 15px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+  width: 200px;
+  cursor: pointer;
+}
+.service:hover {
+  background-color: #796c97;
+  transform: translateY(-3px);
+}
+.service::before {
+  content: "";
+  border-width: 20px;
+  border-style: solid;
+  border-color: #926fe3 #926fe3 rgba(1, 1, 1, 0.4) rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  transition: right 0.3s ease-out, top 0.3s ease-out;
+}
+.service:hover::before {
+  right: 0;
+  top: 0;
+}
+.service > i {
+  display: block;
+  color: #652f91;
+  font-size: 4rem;
+  margin-bottom: 0.9rem;
+  transition: color 0.3s ease-out;
+}
+.service > .title {
+  font-size: 1.2rem;
+  line-height: 1.56rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  transition: color 0.3s ease-out;
+}
+.service > .description {
+  line-height: 1.56rem;
+  margin: 0;
+  transition: color 0.3s ease-out;
+}
+
+.service:hover > i {
+  color: #ad8aff;
+}
+.service:hover > .title {
+  color: #fff;
+}
+.service:hover > .description {
+  color: #ddd6f4;
+}
+/* End Services */
+/* Small Screens */
+@media (max-width: 767px) {
+  .landing .intro-text h1 {
+    font-size: 13vw;
+  }
+  .containe .para {
+    font-size: 15px;
+  }
+  .features .container {
+    margin: 0 32px;
+  }
+  .containe h1 {
+    font-size: 70px;
+  }
+  .service > i {
+    font-size: 3.2rem;
+  }
+  .col {
+    gap: 0;
+  }
+  .landing .intro-text {
+    top: 48%;
+  }
+  .service {
+    padding: 13px 15px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium Screens */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large screens */
+@media (min-width = 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

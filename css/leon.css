@@ -214,8 +214,9 @@ hr {
 .containe {
   /* background-color: #926fe3; */
   margin: 0 auto;
-  background-image: url(../imges/Care.PNG);
+  background-image: url(/imges/Care.PNG);
   background-size: cover;
+  height: 653px;
 }
 .col {
   display: grid;
@@ -339,15 +340,61 @@ hr {
     width: 750px;
   }
 }
+@media (min-width: 903px) {
+  .container {
+    width: 673px;
+  }
+  .col {
+    width: 880px;
+  }
+}
 /* Medium Screens */
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 959px;
+  }
+  .col {
+    width: 100%;
   }
 }
+
 /* Large screens */
-@media (min-width = 1200px) {
+@media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
+}
+@media (min-width: 1400px) {
+  .col {
+    gap: calc(90px);
+  }
+}
+.portf-container h1 {
+  color: #cfcadf;
+  font-size: 100px;
+  padding-top: 21px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+.portf-container .para {
+  margin: -7px 0 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+  text-transform: capitalize;
+}
+.portf-container {
+  /* background-color: #926fe3; */
+  margin: 0 auto;
+  background-image: url(../imges/pur.PNG);
+  background-size: cover;
+}
+.portf-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }
